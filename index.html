@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title> Fresh :: Modern Bulma Ecommerce App and Dashboard</title>
+        <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+        <!--Core CSS -->
+        <link rel="stylesheet" href="assets/css/bulma.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/core.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+        <!--Libraries-->
+        <link rel="stylesheet" type="text/css" href="assets/css/icons.css">
+
+    </head>
+    <body>
+        <div id="preloader">
+            <div id="status"></div>
+        </div>        
+        
+        
+        <section class="hero is-fullheight is-default is-bold">
+        
+            <nav class="navbar is-fresh is-transparent no-shadow" role="navigation" aria-label="main navigation">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="">
+                            <img src="assets/images/logos/fresh-alt.png" alt="" width="112" height="28">
+                        </a>
+            
+                        <a class="navbar-item is-hidden-desktop is-hidden-tablet">
+                            <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
+                                <svg width="1000px" height="1000px">
+                                    <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+                                    <path class="path2" d="M 300 500 L 700 500"></path>
+                                    <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+                                </svg>
+                                <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+                            </div>
+                        </a>
+            
+                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+            
+                    <div id="navbar-menu" class="navbar-menu is-static">
+            
+                        <div class="navbar-start">
+                            <a class="navbar-item is-hidden-mobile">
+                                <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
+                                    <svg width="1000px" height="1000px">
+                                        <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+                                        <path class="path2" d="M 300 500 L 700 500"></path>
+                                        <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+                                    </svg>
+                                    <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+                                </div>
+                            </a>
+                        </div>
+            
+                        <div class="navbar-end">
+                            <!--<a href="#" class="navbar-item is-secondary">
+                                Features
+                            </a>
+                            <a href="#" class="navbar-item is-secondary">
+                                Pricing
+                            </a>
+                            <div class="navbar-item has-dropdown is-hoverable">
+                                <a class="navbar-link">
+                                    Dropdown
+                                </a>
+            
+                                <div class="navbar-dropdown">
+                                    <a class="navbar-item">
+                                        Dropdown item
+                                    </a>
+                                    <a class="navbar-item">
+                                        Dropdown item
+                                    </a>
+                                    <a class="navbar-item">
+                                        Dropdown item
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="#" class="navbar-item is-secondary modal-trigger" data-modal="auth-modal">
+                                Log in
+                            </a>--!>
+                            <a class="navbar-item">
+                                <span class="button signup-button rounded secondary-btn raised">
+                                    Sign up
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <nav id="navbar-clone" class="navbar is-fresh is-transparent" role="navigation" aria-label="main navigation">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="">
+                            <img src="assets/images/logos/fresh-alt.png" alt="" width="112" height="28">
+                        </a>
+            
+                        <a class="navbar-item is-hidden-desktop is-hidden-tablet">
+                            <div id="menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
+                                <svg width="1000px" height="1000px">
+                                    <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+                                    <path class="path2" d="M 300 500 L 700 500"></path>
+                                    <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+                                </svg>
+                                <button id="menu-icon-trigger" class="menu-icon-trigger"></button>
+                            </div>
+                        </a>
+            
+                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="cloned-navbar-menu">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+            
+                    <div id="cloned-navbar-menu" class="navbar-menu is-fixed">
+            
+                        <div class="navbar-start">
+                            <a class="navbar-item is-hidden-mobile">
+                                <div id="cloned-menu-icon-wrapper" class="menu-icon-wrapper" style="visibility: visible;">
+                                    <svg width="1000px" height="1000px">
+                                        <path class="path1" d="M 300 400 L 700 400 C 900 400 900 750 600 850 A 400 400 0 0 1 200 200 L 800 800"></path>
+                                        <path class="path2" d="M 300 500 L 700 500"></path>
+                                        <path class="path3" d="M 700 600 L 300 600 C 100 600 100 200 400 150 A 400 380 0 1 1 200 800 L 800 200"></path>
+                                    </svg>
+                                    <button id="cloned-menu-icon-trigger" class="menu-icon-trigger"></button>
+                                </div>
+                            </a>
+                        </div>
+            
+                        <div class="navbar-end">
+                            <!--<a href="#" class="navbar-item is-secondary">
+                                Features
+                            </a>
+                            <a href="#" class="navbar-item is-secondary">
+                                Pricing
+                            </a>
+                            <div class="navbar-item has-dropdown is-hoverable">
+                                <a class="navbar-link">
+                                    Dropdown
+                                </a>
+            
+                                <div class="navbar-dropdown">
+                                    <a class="navbar-item">
+                                        Dropdown item
+                                    </a>
+                                    <a class="navbar-item">
+                                        Dropdown item
+                                    </a>
+                                    <a class="navbar-item">
+                                        Dropdown item
+                                    </a>
+                                </div>
+                            </div>
+                            <a href="#" class="navbar-item is-secondary modal-trigger" data-modal="auth-modal">
+                                Log in
+                            </a>--!>
+                            <a class="navbar-item">
+                                <span class="button signup-button rounded secondary-btn raised">
+                                    Sign up
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns is-vcentered">
+                        <div class="column is-5 is-offset-1 landing-caption">
+                            <h2 class="subtitle is-4 is-muted is-spaced">
+                            Welcome to
+                            </h2>
+                            <h2 class="title is-2 is-bold is-spaced">Machine Learning Students Association</h2>
+        					<h2 class="subtitle is-5 is-muted">of The University of Melblourne</h2>
+                            <p>
+                                <a class="button cta rounded primary-btn raised">
+                                    Facebook
+                                </a>
+                            </p>
+                        </div>
+                        <div class="column is-5 is-offset-1">
+                            <figure class="image is-4by3">
+                                <img src="assets/images/illustrations/worker.png" alt="Description">
+                            </figure>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        
+            <div class="hero-foot mb-20">
+                <div class="container">
+                    <div class="tabs is-centered">
+                        <ul>
+                            <li><a><img class="partner-logo" src="assets/images/logos/clients/umsu.png"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section section-feature-grey is-medium">
+            <div class="container">
+                <div class="title-wrapper has-text-centered">
+                    <h2 class="title is-2">Activities </h2>
+                    <div class="divider is-centered"></div>
+                </div>
+        
+                <div class="content-wrapper">
+                    <div class="columns">
+                        <div class="column is-one-third">
+                            <div class="feature-card is-bordered has-text-centered revealOnScroll delay-1" data-animation="fadeInLeft">
+                                <div class="card-title">
+                                    <h4>Workshop</h4>
+                                </div>
+                                <div class="card-icon">
+                                    <img src="assets/images/illustrations/icons/mouse-globe.png">
+                                </div>
+                                <div class="card-text">
+                                    <p>Join us if you are interested in learning</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#" class="button btn-align-md raised">Event</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="feature-card is-bordered has-text-centered revealOnScroll delay-2" data-animation="fadeInLeft">
+                                <div class="card-title">
+                                    <h4>Tutorials</h4>
+                                </div>
+                                <div class="card-icon">
+                                    <img src="assets/images/illustrations/icons/laptop-cloud.png">
+                                </div>
+                                <div class="card-text">
+                                    <p>Updated materials from our workshop</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#" class="button btn-align-md secondary-btn raised">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="feature-card is-bordered has-text-centered revealOnScroll delay-3" data-animation="fadeInLeft">
+                                <div class="card-title">
+                                    <h4>Kaggle</h4>
+                                </div>
+                                <div class="card-icon">
+                                    <img src="assets/images/illustrations/icons/plug-cloud.png">
+                                </div>
+                                <div class="card-text">
+                                    <p>Competitions during the semester</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#" class="button btn-align-md raised">Join Teams</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section is-medium section-secondary">
+            <div class="container">
+        
+                <div class="title-wrapper has-text-centered">
+                    <h2 class="title is-2 light-text is-spaced">Our team !</h2>
+                    <h3 class="subtitle is-5 light-text"> </h3>
+                </div>
+        
+                <div class="content-wrapper">
+                    <div class="columns is-vcentered">
+                        <div class="column is-4">
+        					<div class="box">
+        					  <article class="media">
+        						<div class="media-left">
+        						  <figure class="image is-64x64">
+        							<img src="assets/images/illustrations/faces/3.png" alt="Image">
+        						  </figure>
+        						</div>
+        						<div class="media-content">
+        						  <div class="content">
+        							<p>
+        							  <strong>Shalitha Karunatilleke</strong> 
+        							  <br>
+        							  <small>Co-Founder & President</small>
+        							</p>
+        						  </div>
+        						</div>
+        					  </article>
+        					</div>
+                        </div>
+        				<div class="column is-4">
+        					<div class="box">
+        					  <article class="media">
+        						<div class="media-left">
+        						  <figure class="image is-64x64">
+        							<img src="assets/images/illustrations/faces/3.png" alt="Image">
+        						  </figure>
+        						</div>
+        						<div class="media-content">
+        						  <div class="content">
+        							<p>
+        							  <strong>Chenqin Zhang</strong> 
+        							  <br>
+        							  <small>President</small>
+        							</p>
+        						  </div>
+        						</div>
+        					  </article>
+        					</div>
+                        </div>
+        				<div class="column is-4">
+        					<div class="box">
+        					  <article class="media">
+        						<div class="media-left">
+        						  <figure class="image is-64x64">
+        							<img src="assets/images/illustrations/faces/3.png" alt="Image">
+        						  </figure>
+        						</div>
+        						<div class="media-content">
+        						  <div class="content">
+        							<p>
+        							  <strong>Jian Wen Lee (Bryan)</strong> 
+        							  <br>
+        							  <small>Treasurer</small>
+        							</p>
+        						  </div>
+        						</div>
+        					  </article>
+        					</div>
+                        </div>
+                    </div>
+        			<div class="columns is-vcentered">
+                        <div class="column is-half">
+        					<div class="box">
+        					  <article class="media">
+        						<div class="media-left">
+        						  <figure class="image is-64x64">
+        							<img src="assets/images/illustrations/faces/3.png" alt="Image">
+        						  </figure>
+        						</div>
+        						<div class="media-content">
+        						  <div class="content">
+        							<p>
+        							  <strong>Chamal Gomes</strong> 
+        							  <br>
+        							  <small>Tutor</small>
+        							</p>
+        						  </div>
+        						</div>
+        					  </article>
+        					</div>
+                        </div>
+        				<div class="column is-half">
+        					<div class="box">
+        					  <article class="media">
+        						<div class="media-left">
+        						  <figure class="image is-64x64">
+        							<img src="assets/images/illustrations/faces/3.png" alt="Image">
+        						  </figure>
+        						</div>
+        						<div class="media-content">
+        						  <div class="content">
+        							<p>
+        							  <strong>Phoebe Liang</strong> 
+        							  <br>
+        							  <small>Tutor</small>
+        							</p>
+        						  </div>
+        						</div>
+        					  </article>
+        					</div>
+                        </div>
+                    </div>
+        			<div class="columns is-vcentered">
+        				<div class="column is-4">
+        					<div class="box">
+        					  <article class="media">
+        						<div class="media-left">
+        						  <figure class="image is-64x64">
+        							<img src="assets/images/illustrations/faces/3.png" alt="Image">
+        						  </figure>
+        						</div>
+        						<div class="media-content">
+        						  <div class="content">
+        							<p>
+        							  <strong>Evan Cranney</strong> 
+        							  <br>
+        							  <small>Co-Founder & Commitee</small>
+        							</p>
+        						  </div>
+        						</div>
+        					  </article>
+        					</div>
+                        </div>
+        				<div class="column is-4">
+        					<div class="box">
+        					  <article class="media">
+        						<div class="media-left">
+        						  <figure class="image is-64x64">
+        							<img src="assets/images/illustrations/faces/3.png" alt="Image">
+        						  </figure>
+        						</div>
+        						<div class="media-content">
+        						  <div class="content">
+        							<p>
+        							  <strong>Joshua Yang</strong> 
+        							  <br>
+        							  <small>Commitee</small>
+        							</p>
+        						  </div>
+        						</div>
+        					  </article>
+        					</div>
+                        </div>
+                        <div class="column is-4">
+        					<div class="box">
+        					  <article class="media">
+        						<div class="media-left">
+        						  <figure class="image is-64x64">
+        							<img src="assets/images/illustrations/faces/3.png" alt="Image">
+        						  </figure>
+        						</div>
+        						<div class="media-content">
+        						  <div class="content">
+        							<p>
+        							  <strong>Oliver Costa</strong> 
+        							  <br>
+        							  <small>Commitee</small>
+        							</p>
+        						  </div>
+        						</div>
+        					  </article>
+        					</div>
+                        </div>	
+        				
+                    </div>
+        						
+                </div>
+            </div>
+        </section>
+        
+        <section class="section section-light-grey is-medium">
+            <div class="container">
+                <div class="title-wrapper has-text-centered">
+                    <h2 class="title is-2 is-spaced">Subscription</h2>
+                    <h3 class="subtitle is-5 is-muted">We'd love to have you</h3>
+        			</br>
+        			<a href="https://groups.google.com/forum/embed/?place=forum/unimelb-mlsa&showsearch=true&showpopout=true&showtabs=false" class="button cta is-large primary-btn raised is-clear">Google Group</a>
+        			
+                </div>
+            </div>
+        </section>
+        
+        <div id="auth-modal" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-content">
+                <div class="flex-card auth-card">
+                    <div class="tabs-wrapper">
+        			
+                        <div class="tabs">
+                            <ul>
+                                <li class="is-active" data-tab="login-tab"><a>Login</a></li>
+                                <li data-tab="register-tab"><a>Register</a></li>
+                            </ul>
+                        </div>
+                        <div id="login-tab" class="tab-content is-active">
+                            <div class="field">
+                                <label>Username</label>
+                                <div class="control">
+                                    <input type="text" class="input is-medium" placeholder="Enter username">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <label>Password</label>
+                                <div class="control">
+                                    <input type="password" class="input is-medium" placeholder="Enter password">
+                                </div>
+                            </div>
+        
+                            <a class="button is-fullwidth secondary-btn is-rounded raised">Log in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="modal-close is-large" aria-label="close"></button>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        <footer class="footer footer-dark">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <div class="footer-logo">
+                            <img src="assets/images/logos/fresh-white-alt.png">
+                        </div>
+                    </div>
+                    
+                    <div class="column">
+                        <div class="footer-column">
+                            <div class="footer-header">
+                                <h3>Follow Us</h3>
+                                <nav class="level is-mobile">
+                                    <div class="level-left">
+                                        <a class="level-item" href="https://github.com/#">
+                                            <span class="icon"><i class="fa fa-github"></i></span>
+                                        </a>
+                                        <a class="level-item" href="https://fb.com/#">
+                                            <span class="icon"><i class="fa fa-facebook"></i></span>
+                                        </a>
+                                        <a class="level-item" href="https://twitter.com/#">
+                                            <span class="icon"><i class="fa fa-twitter"></i></span>
+                                        </a>
+                                    </div>
+                                </nav>
+        
+                                <a href="https://bulma.io" target="_blank">
+                                    <img src="assets/images/logos/made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Back To Top Button -->
+        <div id="backtotop"><a href="#"></a></div>        <div class="sidebar">
+            <div class="sidebar-header">
+                <img src="assets/images/logos/fresh-square.png">
+                <a class="sidebar-close" href="javascript:void(0);"><i data-feather="x"></i></a>
+            </div>
+            <div class="inner">
+                <ul class="sidebar-menu">
+                    <li><span class="nav-section-title"></span></li>
+                    <li class="have-children"><a href="#"><span class="fa fa-user"></span>Connect</a>
+                        <ul>
+                            <li><a href="#">LinkedIn</a></li>
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">WeChat</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>        <!-- jQuery first, then Bootstrap JS. -->
+        <script src="assets/js/app.js"></script>
+        
+        <!-- JS -->
+        <!--script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+        <!--script src="assets/js/jquery-panelslider/jquery.panelslider.min.js"></script-->
+        <script src="assets/js/fresh.js"></script>
+        <!-- /JS -->    </body>  
+</html>
